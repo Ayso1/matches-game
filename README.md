@@ -1,3 +1,9 @@
+# matches-game
+
+Web app where users can play against AI.
+
+=======
+
 ## Getting Started
 
 First, run the development server:
@@ -9,3 +15,5 @@ yarn dev
 # or
 pnpm dev
 ```
+
+=======
