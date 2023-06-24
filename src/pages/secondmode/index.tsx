@@ -72,14 +72,25 @@ const GameAIFirst = () => {
   }, [matches, userMatches, aiMatches]);
 
   const declareWinner = (winner: string) => {
-    toast.success(`Game over! ${winner} wins.`, {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 3000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-    });
+    if (winner === 'Player') {
+      toast.success('Congratulations! You win.', {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+      });
+    } else {
+      toast.error('AI wins. Better luck next time.', {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+      });
+    }
   };
 
   const restartGame = () => {

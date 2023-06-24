@@ -3,13 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
 }
 .title {
   font-size: 2rem;
@@ -35,4 +28,8 @@
 .descriptions h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+.center {
+  max-width: 600px; /* Adjust the value to your desired width */
+  margin: 0 auto; /* Center the container horizontally */
 }
